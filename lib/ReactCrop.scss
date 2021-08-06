@@ -15,7 +15,7 @@ $drag-handle-mobile-width: 24px !default;
 $drag-handle-mobile-height: 24px !default;
 
 // Handle color/border.
-$drag-handle-background-colour: rgba(0, 0, 0, 0.2) !default;
+$drag-handle-background-colour: unset !default;
 $drag-handle-border: 1px solid rgba(255, 255, 255, 0.7) !default;
 
 $half-drag-handle-height: math.div($drag-handle-height, 2);
