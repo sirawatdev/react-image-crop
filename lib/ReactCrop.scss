@@ -15,7 +15,7 @@ $drag-handle-mobile-width: 24px !default;
 $drag-handle-mobile-height: 24px !default;
 
 // Handle color/border.
-$drag-handle-background-colour: unset !default;
+$drag-handle-background-colour: rgba(0, 0, 0, 0.2) !default;
 $drag-handle-border: 1px solid rgba(255, 255, 255, 0.7) !default;
 
 $half-drag-handle-height: math.div($drag-handle-height, 2);
@@ -51,7 +51,6 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     transform: translate3d(0, 0, 0);
     box-sizing: border-box;
     cursor: move;
-    box-shadow: 0 0 0 9999em rgba(0, 0, 0, 0.5);
     touch-action: none;
 
     .ReactCrop--disabled & {
@@ -145,6 +144,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     cursor: nw-resize;
 
     &::after {
+      visibility: hidden;
       top: 0;
       left: 0;
     }
@@ -157,6 +157,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     cursor: n-resize;
 
     &::after {
+      visibility: hidden;
       top: 0;
     }
   }
@@ -168,6 +169,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     cursor: ne-resize;
 
     &::after {
+      visibility: hidden;
       top: 0;
       right: 0;
     }
@@ -180,6 +182,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     cursor: e-resize;
 
     &::after {
+      visibility: hidden;
       right: 0;
     }
   }
@@ -191,6 +194,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     cursor: se-resize;
 
     &::after {
+      visibility: hidden;
       bottom: 0;
       right: 0;
     }
@@ -203,6 +207,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     cursor: s-resize;
 
     &::after {
+      visibility: hidden;
       bottom: 0;
     }
   }
@@ -214,6 +219,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     cursor: sw-resize;
 
     &::after {
+      visibility: hidden;
       bottom: 0;
       left: 0;
     }
@@ -226,6 +232,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     cursor: w-resize;
 
     &::after {
+      visibility: hidden;
       left: 0;
     }
   }
