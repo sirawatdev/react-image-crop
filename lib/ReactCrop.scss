@@ -51,6 +51,7 @@ $half-drag-bar-size: math.div($drag-bar-size, 2);
     transform: translate3d(0, 0, 0);
     box-sizing: border-box;
     cursor: move;
+    box-shadow: 0 0 0 9999em rgba(0, 0, 0, 0.5);
     touch-action: none;
 
     .ReactCrop--disabled & {
